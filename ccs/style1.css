@@ -1,0 +1,210 @@
+:root {
+    --grey1: #e7ecef;
+    --grey2: #8b8c88;
+    --blue1: #274c77;
+    --blue2: #6096ba;
+    --blue3: #a3cef1;
+  }
+  * {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  body{
+    margin: 0px;
+    font-family: "Segoe UI", Arial, sans-serif;
+  }
+  h1 {
+    font-size: 40px;
+    padding: 60px 30px;
+    margin: 0;
+    color: white;
+  }
+  h2 {
+    margin-top: 20px;
+    font-size: 30px;
+    text-align:justify;
+    color: black;
+   
+  }
+  h3 {
+    font-size: 20px;
+    color: black;
+  }
+  
+  figure {
+    font-size: 10px;
+  }
+  
+  header {
+    min-height: 90vh;
+    background-image: url(../images/kidsoptical.webp);
+    background-size: cover;
+    background-repeat: no-repeat; 
+    display:block;
+    margin: 0 auto;
+    background-color: var(--blue1); /* For accessibility */
+  }
+ 
+  
+  nav {
+    background-color: white;
+    width: 100%;
+    z-index: 5;
+    position: fixed;
+    opacity: 85%;
+    height: 80px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+  }
+
+  header h1 {
+    padding-top: 120px;
+  }
+ 
+    nav ul{
+        list-style-type: none;
+        margin: 0;
+        overflow: hidden;
+    }
+
+    nav li{
+        display: inline-block;
+      
+    }
+
+    nav li a{
+        display: block;
+        color: #274c77;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+        
+    }
+
+    
+    nav li a:hover {
+        box-shadow: inset 0px 0px 0px 28px var(--blue1);
+        color: white;
+        /* font-size: 18px; */
+    }
+  
+   nav a:active {
+    /* font-size: 14px; */
+   }
+ section {
+    min-height: 90vh;
+    margin: 20px auto;
+    padding: 20px 20px ;
+   
+ }
+ #About {
+    background-color: white;
+    min-height: 70vh;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #274c77;
+
+}
+
+#About p {
+    text-align: left;
+    color: black;
+}
+  #About aside {
+ 
+   float: right;
+   width: 25%;
+   font-size: 22px;
+    background-color:#a3cef1;
+    line-height: 1.5;
+    border-radius: 10px 10px;
+    padding: 20px 40px;
+    text-align: left;
+    color: black;
+  }
+
+ aside img {
+    border-radius: 10px;
+    width: 370px;
+    max-width: 100%;
+    height: auto;
+
+ }
+ #Services {
+    background-color: #8b8c88;
+
+    background-size:cover;
+    background-repeat: no-repeat; 
+    display:block;
+    margin: 0 auto;
+    
+    
+   
+  }
+
+  #Services ul {
+    font-size: 18px;
+    line-height: 2.5;
+    columns: 3;
+    -webkit-columns: 3;
+    -moz-columns: 3;
+  }
+ 
+#Services img {
+   
+    
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+  width: 1600px;
+   
+}
+  
+
+ #ContactUs {
+    min-height: 30vh;
+    line-height: 1.5;
+   color: #274c77;
+   font-size: 18px;
+}
+
+    
+
+
+ 
+
+   footer {
+
+    text-align: center;
+    background-color:#8b8c88;
+    width: 100%;
+    padding: 10px;
+   
+
+   } 
+
+ @media only screen and (max-width:600px) {
+    nav {
+        opacity: 1;
+        justify-content: center;
+    }
+    section {
+        width: 100%;
+    }
+   
+ aside {
+   display: none;
+ }
+ #Services ul {
+    columns: unset;
+    padding: 5px 5px;
+ }
+
+ }
+    
+
+  
